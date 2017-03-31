@@ -1,11 +1,20 @@
 
 public class ElevatorImpl implements Elevator {
 
-	private boolean doorOpen;
+	private boolean isdoorOpen;
 	private int numberOfTrips;
 	private int numberOfFloorsPassed;
 	private boolean isInMaintenanceMode;
-	@Override
+	private int currentFloor;
+	
+	public ElevatorImpl(){
+		isdoorOpen = false;
+		numberOfTrips = 0;
+		numberOfFloorsPassed = 0;
+		isInMaintenanceMode = false;
+		currentFloor = 1;
+	}
+		
 	public void sendFloorReport() {
 		// TODO Auto-generated method stub
 		
@@ -22,7 +31,7 @@ public class ElevatorImpl implements Elevator {
 	}
 	
 	public boolean isDoorOpen() {
-		return doorOpen;
+		return isdoorOpen;
 	}
 	
 }

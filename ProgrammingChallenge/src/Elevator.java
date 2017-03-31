@@ -14,12 +14,18 @@ public interface Elevator {
 	public int getnumberOfFloorsPassed();
 	public boolean getisInMaintenanceMode();
 	public int getcurrentFloor();
+	public boolean getisStationary();
+	public boolean getisGoingUp();
+	public boolean getisGoingDown();
 	
-	public boolean setisDoorOpen();
-	public int setnumberOfTrips();
-	public int setnumberOfFloorsPassed();
-	public boolean setisInMaintenanceMode();
-	public int setcurrentFloor();
+	public void setisDoorOpen(boolean isDoorOpen);
+	public void setnumberOfTrips(int numberOfTrips);
+	public void setnumberOfFloorsPassed(int numberOfFloorsPassed);
+	public void setisInMaintenanceMode(boolean isInMaintenanceMode);
+	public void setcurrentFloor(int currentFloor);
+	public void setisStationary(boolean isStationary);
+	public void setisGoingUp(boolean isGoingUp);
+	public void setisGoingDown(boolean isGoingDown);
 	
 	
 }

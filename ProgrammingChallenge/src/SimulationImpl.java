@@ -13,7 +13,15 @@ public class SimulationImpl implements Simulation {
 		this.numberOfElevators = numberOfElevators;
 		this.numberOfFloors = numberOfFloors;
 		topFloor = numberOfFloors; 
+		
+		//initializing elevators
+		elevators = new ArrayList<Elevator>();
+		for (int i = 0; i < numberOfElevators; i++) {
+			Elevator e1 = new ElevatorImpl();
+			elevators.add(e1);	
+		}
 	}
+	
 	
 	public boolean callElevatorRequest(int originFloor, int destinationFloor) {
 		

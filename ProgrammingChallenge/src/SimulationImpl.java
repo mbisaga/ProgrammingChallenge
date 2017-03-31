@@ -27,7 +27,7 @@ public class SimulationImpl implements Simulation {
 		
 	}
 	
-	private int findClosestElevator() {
+	private Elevator findClosestElevator() {
 		
 	}
 }

@@ -1,17 +1,17 @@
 
 public class ElevatorImpl implements Elevator {
 
-	private boolean isdoorOpen;
+	private boolean isDoorOpen;
 	private int numberOfTrips;
 	private int numberOfFloorsPassed;
 	private boolean isInMaintenanceMode;
 	private int currentFloor;
-	private boolean isStopped;
+	private boolean isStationary;
 	private boolean isGoingUp;
 	private boolean isGoingDown;
 	
 	public ElevatorImpl(){
-		isdoorOpen = false;
+		isDoorOpen = false;
 		numberOfTrips = 0;
 		numberOfFloorsPassed = 0;
 		isInMaintenanceMode = false;
@@ -35,98 +35,82 @@ public class ElevatorImpl implements Elevator {
 
 	@Override
 	public boolean getisDoorOpen() {
-		// TODO Auto-generated method stub
-		return false;
+		return isDoorOpen;
 	}
 
 	@Override
 	public int getnumberOfTrips() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numberOfTrips;
 	}
 
 	@Override
 	public int getnumberOfFloorsPassed() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numberOfFloorsPassed;
 	}
 
 	@Override
 	public boolean getisInMaintenanceMode() {
-		// TODO Auto-generated method stub
-		return false;
+		return isInMaintenanceMode;
 	}
 
 	@Override
 	public int getcurrentFloor() {
-		// TODO Auto-generated method stub
-		return 0;
+		return currentFloor;
 	}
 
 	@Override
 	public boolean getisStationary() {
-		// TODO Auto-generated method stub
-		return false;
+		return isStationary;
 	}
 
 	@Override
 	public boolean getisGoingUp() {
-		// TODO Auto-generated method stub
-		return false;
+		return isGoingUp;
 	}
 
 	@Override
 	public boolean getisGoingDown() {
-		// TODO Auto-generated method stub
-		return false;
+		return isGoingDown;
 	}
 
 	@Override
 	public void setisDoorOpen(boolean isDoorOpen) {
-		// TODO Auto-generated method stub
-		
+		this.isDoorOpen = isDoorOpen;
 	}
 
 	@Override
 	public void setnumberOfTrips(int numberOfTrips) {
-		// TODO Auto-generated method stub
-		
+		this.numberOfTrips = numberOfTrips;
 	}
 
 	@Override
 	public void setnumberOfFloorsPassed(int numberOfFloorsPassed) {
-		// TODO Auto-generated method stub
-		
+		this.numberOfFloorsPassed = numberOfFloorsPassed;
 	}
 
 	@Override
 	public void setisInMaintenanceMode(boolean isInMaintenanceMode) {
-		// TODO Auto-generated method stub
-		
+		this.isInMaintenanceMode = isInMaintenanceMode;
 	}
 
 	@Override
 	public void setcurrentFloor(int currentFloor) {
-		// TODO Auto-generated method stub
-		
+		this.currentFloor = currentFloor;
 	}
 
 	@Override
 	public void setisStationary(boolean isStationary) {
-		// TODO Auto-generated method stub
-		
+		this.isStationary = isStationary;
 	}
 
 	@Override
 	public void setisGoingUp(boolean isGoingUp) {
-		// TODO Auto-generated method stub
-		
+		this.isGoingUp = isGoingUp;
 	}
 
 	@Override
 	public void setisGoingDown(boolean isGoingDown) {
-		// TODO Auto-generated method stub
-		
+		this.isGoingDown = isGoingDown;
 	}
 	
 	

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class SimulationImpl implements Simulation {
 
@@ -5,6 +7,7 @@ public class SimulationImpl implements Simulation {
 	private int numberOfFloors;
 	private int topFloor;
 	private int groundFloor = 1;
+	ArrayList<Elevator> elevators;
 	
 	public SimulationImpl(int numberOfElevators, int numberOfFloors) {
 		this.numberOfElevators = numberOfElevators;
